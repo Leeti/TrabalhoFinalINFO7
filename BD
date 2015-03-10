@@ -134,7 +134,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`tb_autenticacao` (
   `id_autenticacao` INT NOT NULL,
   `siape` INT NOT NULL,
   `data_acesso` DATE NOT NULL,
-  `hora_de_acesso` INT NOT NULL,
+  `hora_de_acesso` TIME NOT NULL,
   `senha` VARCHAR(10) NOT NULL,
   PRIMARY KEY (`id_autenticacao`),
   INDEX `fk_autenticacao_professor_idx` (`siape` ASC),
